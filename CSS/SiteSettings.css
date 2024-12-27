@@ -1,0 +1,302 @@
+body section hr {
+    margin: 200px 0 0 0;
+}
+
+body section div {
+    margin: 0 0 0 250px;
+}
+
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.boxTextLogo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: -1px;
+
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.mRectLogo2 {
+
+    background:
+        linear-gradient(#000000 0 0) padding-box,
+        linear-gradient(135deg, #326CFF, #26FFF2) border-box;
+
+    font-family: 'Lemon';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: -1px;
+    height: fit-content;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    border: 8px solid transparent;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+
+.in {
+    grid-template-columns: 206px 309px 80px 1001px;
+}
+
+.but {
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.Textbut {
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin: auto 1em;
+    margin-top: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.Textbut:hover {
+    opacity: 1;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to right, #326CFF, #26FFF2 100%);
+    transition: width .3s ease 0s, right .3s ease 0s;
+    width: 0;
+}
+
+.Button {
+    margin: auto 2em;
+    background: 0;
+    border-style: none;
+    color: #fff;
+}
+
+.Text {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: -1px;
+    background: 0;
+    border-style: none;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.Text-desc {
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    color: #C2C2C2;
+
+}
+
+.Button:hover {
+    opacity: 0.5;
+}
+
+.headerText {
+    font-family: 'Marcellus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 500%;
+
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    color: #FFFFFF;
+
+}
+
+.HeaderPhoto {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 900px; /* ширина контейнера */
+    height: 900px; /* высота контейнера */
+    overflow: hidden;
+}
+
+.ButtonAction {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 0px;
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.ButtonAction:hover {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 0px;
+    color: #FFFFFF;
+
+    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+    border-radius: 100px;
+}
+
+.mRectLogo2-border {
+    box-sizing: border-box;
+    background:
+        linear-gradient(#000000 0 0) padding-box,
+        linear-gradient(135deg, #326CFF, #26FFF2) border-box;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    height: fit-content;
+    margin-top: 10px;
+
+    color: #FFFFFF;
+    border: 5px solid transparent;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+hr {
+    background: #2F2E2E;
+    border-style: none;
+    width: 1500px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.tShowsIn {
+    grid-template-columns: 206px 309px 80px 1001px;
+}
+
+.VidImg {
+    background: 0;
+    border-style: none;
+}
+
+.VidImg:hover {
+    box-shadow: 0px 0px 10px 0px #26FFF2;
+    border-radius: 20px;
+}
+
+
+
+.TVshows {
+    display: grid;
+    grid-template-columns: repeat(6, 220px);
+    grid-column-gap: 1em;
+    grid-template-rows: 50px 309px;
+}
+
+.TextNameGroup {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 500px 68px 384px 384px;
+    margin-left: 1%;
+}
+
+.wrapperdesc {
+    margin: 0;
+}
+
+.wrapperH {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 1em;
+}
+
+.wrapperHero {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-rows: 50% 30% 20%;
+    grid-template-columns: repeat(2, 50%);
+    margin: 5% 5% 0 5%;
+}
+
+.wrapperButtons {
+    display: grid;
+    margin: 0;
+    height: fit-content;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: 50px;
+    grid-column-gap: 1em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}

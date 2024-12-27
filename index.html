@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test Site</title>
+    <link rel="stylesheet" type="text/css" href="CSS/SiteSettings.css">
+    <script>
+        function switchLanguage(lang) {
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(element => {
+                element.textContent = element.getAttribute(`data-lang-${lang}`);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapperH">
+            <div class="box1">
+                <div class="mRectLogo2">NIOM</div>
+            </div>
+            <nav class="in">
+                <a href="#" class="Textbut" data-lang data-lang-en="Home" data-lang-ru="Главная">Home</a>
+                <a href="#" class="Textbut" data-lang data-lang-en="Games" data-lang-ru="Игры">Games</a>
+                <a href="#" class="Textbut" data-lang data-lang-en="Arts" data-lang-ru="Арт">Arts</a>
+                <a href="#" class="Textbut" data-lang data-lang-en="About" data-lang-ru="Информация">About</a>
+            </nav>
+            <div class="but">
+                <button class="Button" onclick="switchLanguage('en')">EN</button>
+                <button class="Button" onclick="switchLanguage('ru')">RU</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <section class="wrapperHero">
+            <p class="headerText">Each game is<br>A new adventure!</p>
+            <div class="HeaderPhoto">
+            </div>
+            <div class="wrapperdesc">
+                <p class="Text-desc" data-lang data-lang-en="Hello! I'm Vladislav, a game developer, and this is my website. Here you can find my works - games, 3D art, and more. Here, each game is a new adventure!" data-lang-ru="Привет! Я Владислав, разработчик игр, и это мой сайт. На нем вы можете найти мои работы - игры, 3D арты и другое. Здесь каждая игра – это новое приключение!">
+                    Hello! I'm Vladislav, a game developer, and this is my website. Here you can find my works - games, 3D art, and more. Here, each game is a new adventure!
+                </p>
+            </div>
+            <div class="wrapperButtons">
+                <button class="ButtonAction" onclick="location.href='#games'">
+                    <p data-lang data-lang-en="Projects" data-lang-ru="Проекты">Projects</p>
+                </button>
+                <button class="ButtonAction" onclick="location.href='#'">
+                    <p data-lang data-lang-en="More information" data-lang-ru="Информация">More information</p>
+                </button>
+            </div>
+        </section>
+        <hr>
+        <section class="TVshows">
+            <a href="#" class="TextNameGroup" id="games">Games ></a>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение игры"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение игры"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение игры"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение игры"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение игры"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение игры"></button>
+        </section>
+        <section class="TVshows">
+            <a href="#" class="TextNameGroup">Arts ></a>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение искусства"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение искусства"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение искусства"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение искусства"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение искусства"></button>
+            <button class="VidImg"><img src="1 9.png" alt="Изображение искусства"></button>
+        </section>
+    </main>
+</body>
+
+</html>
