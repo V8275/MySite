@@ -231,16 +231,24 @@ hr {
 }
 
 .VidImg {
-    background: 0;
+    background: transparent; /* Изменено с 0 на transparent для лучшей читаемости */
     border-style: none;
+    width: 200px; /* Установите ширину кнопки */
+    height: 270px; /* Установите высоту кнопки */
+    overflow: hidden; /* Скрыть часть изображения, выходящую за границы */
+    position: relative; /* Для абсолютного позиционирования изображения */
+}
+
+.VidImg img {
+    width: 100%; /* Ширина изображения 100% от кнопки */
+    height: 100%; /* Высота изображения 100% от кнопки */
+    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
 }
 
 .VidImg:hover {
     box-shadow: 0px 0px 10px 0px #26FFF2;
     border-radius: 20px;
 }
-
-
 
 .TVshows {
     display: grid;
