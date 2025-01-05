@@ -232,6 +232,7 @@ hr {
 
 .VidImg {
     background: transparent; /* Изменено с 0 на transparent для лучшей читаемости */
+    padding: 0;
     border-style: none;
     width: 200px; /* Установите ширину кнопки */
     height: 270px; /* Установите высоту кнопки */
