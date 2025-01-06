@@ -1,9 +1,9 @@
 body section hr {
-    margin: 200px 0 0 0;
+    margin: 10% 0 0 0;
 }
 
 body section div {
-    margin: 0 0 0 250px;
+    margin: 0 0 0 12%;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     background-color: #000000;
     background-position: center;
     background-attachment: scroll;
+    justify-self: center;
 }
 
 .boxTextLogo {
@@ -55,12 +56,6 @@ body {
     padding: 5px;
 }
 
-
-
-.in {
-    grid-template-columns: 206px 309px 80px 1001px;
-}
-
 .but {
     justify-content: space-between;
     margin: 3%;
@@ -73,7 +68,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     margin: auto 1em;
-    margin-top: 18px;
+    margin-top: 2%;
     text-align: center;
 
     color: #FFFFFF;
@@ -138,9 +133,9 @@ a::after {
     font-size: 18px;
     line-height: 28px;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 2;
     color: #C2C2C2;
 
 }
@@ -156,8 +151,6 @@ a::after {
     font-size: 500%;
 
     margin: 0;
-    grid-column-start: 1;
-    grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
     color: #FFFFFF;
@@ -293,9 +286,7 @@ hr {
 
 .wrapperHero {
     display: grid;
-    grid-column-gap: 1em;
     grid-template-rows: 50% 30% 20%;
-    grid-template-columns: repeat(2, 50%);
     margin: 5% 5% 0 5%;
 }
 
@@ -306,8 +297,8 @@ hr {
     grid-template-columns: repeat(2, 160px);
     grid-template-rows: 50px;
     grid-column-gap: 1em;
-    grid-column-start: 1;
-    grid-column-end: 2;
+}
+
+.wrapperHero .wrapperButtons{
     grid-row-start: 3;
-    grid-row-end: 3;
 }
