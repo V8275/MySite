@@ -162,8 +162,8 @@ a::after {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-    width: 900px; /* ширина контейнера */
-    height: 900px; /* высота контейнера */
+    width: 900px;
+    height: 900px;
     overflow: hidden;
 }
 
@@ -224,21 +224,21 @@ hr {
 }
 
 .VidImg {
-    background: transparent; /* Изменено с 0 на transparent для лучшей читаемости */
+    background: transparent;
     padding: 0;
     border-style: none;
-    width: 200px; /* Установите ширину кнопки */
-    height: 270px; /* Установите высоту кнопки */
-    overflow: hidden; /* Скрыть часть изображения, выходящую за границы */
-    position: relative; /* Для абсолютного позиционирования изображения */
+    width: 200px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
 }
 
 .VidImg img {
     justify-self: left;
     border-radius: 20px;
-    width: 100%; /* Ширина изображения 100% от кнопки */
-    height: 100%; /* Высота изображения 100% от кнопки */
-    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .VidImg:hover {
@@ -246,7 +246,7 @@ hr {
     border-radius: 20px;
 }
 
-.TVshows {
+.Elements {
     display: grid;
     grid-template-columns: repeat(6, 220px);
     grid-column-gap: 1em;
