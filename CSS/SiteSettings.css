@@ -53,7 +53,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    width: 100%;
 }
 
 .in {
@@ -207,7 +206,11 @@ hr {
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 0px rgba(38, 255, 242, 0);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
 }
 
 .VidImg img {
@@ -215,11 +218,17 @@ hr {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
 .VidImg:hover {
     box-shadow: 0px 0px 10px 0px #26FFF2;
+    transform: scale(1.05);
     border-radius: 20px;
+}
+
+.VidImg:hover img {
+    transform: scale(1.02);
 }
 
 .Elements {
@@ -243,6 +252,7 @@ hr {
 }
 
 .wrapper {
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -266,7 +276,17 @@ hr {
     margin: 1rem 0;
 }
 
-/* Медиа-запросы для адаптивности */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+
 @media (max-width: 768px) {
     .wrapperH {
         flex-direction: column;
@@ -289,6 +309,6 @@ hr {
     .TextNameGroup {
         width: 100%;
         text-align: center;
-        margin-right: 0;
+        margin-left: 2rem;
     }
 }
