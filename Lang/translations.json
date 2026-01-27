@@ -1,0 +1,38 @@
+{
+  "en": {
+    "nav_home": "Home",
+    "nav_games": "Games",
+    "nav_arts": "Arts",
+    "nav_about": "About",
+    "about_title": "About Me",
+    "about_greeting": "Hi! I'm Vladislav, a Unity programmer and 3D artist with 5 years of professional experience in game development. I have knowledge of Unity, C#, and Unreal Engine for creating game systems and mechanics.",
+    "about_journey": "My professional experience includes working as a Unity programmer, focusing on AI behavior, character mechanics, legacy code optimization, and shader development. I also have experience in the full development cycle of hyper-casual projects and simulators.",
+    "about_details": "I have knowledge in technical art, including Shader Graph, VFX Graph, 3D modeling in Blender, and game optimization. I have worked with Yandex SDK, IronSource, Admob, and have experience with Zenject and DoTween frameworks.",
+    "skills_title": "Skills & Expertise",
+    "projects": "Projects",
+    "more_info": "More information",
+    "email": "Email",
+    "main_title": "Each game is a new adventure!",
+    "main_description": "Hello! I'm Vladislav, a game developer, and this is my website. Here you can find my works - games, 3D art, and more. Here, each game is a new adventure!",
+    "head_games": "Games >",
+    "head_arts": "Arts >"
+  },
+  "ru": {
+    "nav_home": "Главная",
+    "nav_games": "Игры",
+    "nav_arts": "Арт",
+    "nav_about": "Информация",
+    "about_title": "Обо мне",
+    "about_greeting": "Привет! Я Владислав, Unity-программист и 3D-художник с 5-летним профессиональным опытом в разработке игр. Обладаю знаниями в Unity, C# и Unreal Engine для создания игровых систем и механик.",
+    "about_journey": "Мой профессиональный опыт включает работу в качестве Unity-программиста, занимался поведением ИИ, механиками персонажей, оптимизацией legacy-кода и разработкой шейдеров. Также имею опыт полного цикла разработки гиперказуальных проектов и симуляторов.",
+    "about_details": "Обладаю знаниями в техническом арте, включая Shader Graph, VFX Graph, 3D-моделирование в Blender и оптимизацию игр. Работал с Yandex SDK, IronSource, Admob, имею опыт работы с фреймворками Zenject и DoTween.",
+    "skills_title": "Навыки и опыт",
+    "projects": "Проекты",
+    "more_info": "Информация",
+    "email": "Почта",
+    "main_title": "Каждая игра это новое приключение!",
+    "main_description": "Привет! Я Владислав, разработчик игр, и это мой сайт. На нем вы можете найти мои работы - игры, 3D арты и другое. Здесь каждая игра – это новое приключение!",
+    "head_games": "Игры >",
+    "head_arts": "Арт >"
+  }
+}

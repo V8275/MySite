@@ -1,19 +1,51 @@
-let language = sessionStorage.getItem('selectedLanguage') || 'en';
+let currentLanguage = sessionStorage.getItem('selectedLanguage') || 'en';
+let translations = {};
 
-function switchFirstLang(){
-    switchLanguage(language);
+async function loadTranslations() {
+    try {
+        const response = await fetch('Lang/translations.json');
+        translations = await response.json();
+        applyTranslations(currentLanguage);
+    } catch (error) {
+        console.error('Error loading translations:', error);
+        translations = getFallbackTranslations();
+        applyTranslations(currentLanguage);
+    }
 }
 
-function switchLanguage(lang) {
-    const elements = document.querySelectorAll('[data-lang]');
+function getFallbackTranslations() {
+    return {
+    };
+}
+
+function applyTranslations(lang) {
+    const elements = document.querySelectorAll('[data-translate]');
     elements.forEach(element => {
-        element.textContent = element.getAttribute(`data-lang-${lang}`);
+        const key = element.getAttribute('data-translate');
+        if (translations[lang] && translations[lang][key]) {
+            if (element.tagName === 'IMG' && element.hasAttribute('data-translate-alt')) {
+                element.alt = translations[lang][key];
+            } else if (element.hasAttribute('data-translate-html')) {
+                element.innerHTML = translations[lang][key];
+            } else {
+                element.textContent = translations[lang][key];
+            }
+        }
     });
-    language = lang;
+    currentLanguage = lang;
     sessionStorage.setItem('selectedLanguage', lang);
 }
 
-function redirect(element) {
-    const url = element.getAttribute('data-url');
-            window.location.href = url;
-        }
+function switchLanguage(lang) {
+    if (translations[lang]) {
+        applyTranslations(lang);
+    }
+}
+
+function openWindow(link){
+    window.open(link, '_blank');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    loadTranslations();
+});

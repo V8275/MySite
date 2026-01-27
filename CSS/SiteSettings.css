@@ -3,7 +3,7 @@ body section hr {
 }
 
 body section div {
-    margin: 0 0 0 12%;
+    margin: 0;
 }
 
 body {
@@ -157,6 +157,16 @@ a::after {
     overflow: hidden;
     background: #2F2E2E;
     border-radius: 20px;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.HeaderPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
 }
 
 .ButtonAction {
@@ -256,7 +266,7 @@ hr {
     font-size: 28px;
     color: #FFFFFF;
     margin: 0;
-    margin-right: 2rem;
+    margin-left: 5%;
     min-width: 120px;
 }
 
@@ -272,13 +282,18 @@ hr {
 .wrapperdesc {
     margin: 1rem 0;
     max-width: 600px;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .wrapperHero {
     display: flex;
     flex-direction: column;
-    margin: 2rem 5%;
+    margin: 2rem 5%; /* Уже адаптивно */
     gap: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .wrapperButtons {
@@ -317,7 +332,6 @@ header {
     margin: 1rem 0;
 }
 
-/* Медиа-запросы для мобильных устройств */
 @media (max-width: 768px) {
     .wrapperH {
         flex-direction: column;
@@ -333,7 +347,7 @@ header {
     .HeaderPhoto {
         width: 300px;
         height: 300px;
-        margin: 0 auto;
+        margin: 1rem auto;
     }
     
     .Elements {

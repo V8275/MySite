@@ -10,14 +10,14 @@
 <body onload="switchFirstLang()">
     <header>
         <div class="wrapperH">
-            <div class="box1">
+            <!-- <div class="box1">
                 <div class="mRectLogo2">NIOM</div>
-            </div>
+            </div> -->
             <nav class="in">
-                <a href="index.html" class="Textbut" data-lang data-lang-en="Home" data-lang-ru="Главная">Home</a>
-                <a href="games.html" class="Textbut" data-lang data-lang-en="Games" data-lang-ru="Игры">Games</a>
-                <a href="#" class="Textbut" data-lang data-lang-en="Arts" data-lang-ru="Арт">Arts</a>
-                <a href="#" class="Textbut" data-lang data-lang-en="About" data-lang-ru="Информация">About</a>
+                <a href="index.html" class="Textbut" data-translate="nav_home">Home</a>
+                <a href="games.html" class="Textbut" data-translate="nav_games">Games</a>
+                <a href="arts.html" class="Textbut" data-translate="nav_arts">Arts</a>
+                <a href="about.html" class="Textbut" data-translate="nav_about">About</a>
             </nav>
             <div class="wrapperButtons">
                 <button class="ButtonAction" onclick="switchLanguage('en')">EN</button>
@@ -28,43 +28,44 @@
 
     <main class="wrapper">
         <section class="wrapperHero">
-            <p class="headerText">Each game is<br>A new adventure!</p>
+            <p class="headerText" data-translate="main_title">Each game is<br>A new adventure!</p>
             <div class="HeaderPhoto">
+                <img src="Resources/Background.jpg" alt="Header Image">
+            </div>
             </div>
             <div class="wrapperdesc">
-                <p class="Text-desc" data-lang data-lang-en="Hello! I'm Vladislav, a game developer, and this is my website. Here you can find my works - games, 3D art, and more. Here, each game is a new adventure!" data-lang-ru="Привет! Я Владислав, разработчик игр, и это мой сайт. На нем вы можете найти мои работы - игры, 3D арты и другое. Здесь каждая игра – это новое приключение!">
+                <p class="Text-desc" data-translate="main_description">
                     Hello! I'm Vladislav, a game developer, and this is my website. Here you can find my works - games, 3D art, and more. Here, each game is a new adventure!
                 </p>
             </div>
             <div class="wrapperButtons">
                 <button class="ButtonAction" onclick="location.href='#games'">
-                    <p data-lang data-lang-en="Projects" data-lang-ru="Проекты">Projects</p>
+                    <p data-translate="projects">Projects</p>
                 </button>
-                <button class="ButtonAction" onclick="location.href='#'">
-                    <p data-lang data-lang-en="More information" data-lang-ru="Информация">More information</p>
+                <button class="ButtonAction" onclick="location.href='about.html'">
+                    <p data-translate="more_info">More information</p>
                 </button>
             </div>
         </section>
         <hr>
-        <a href="games.html" class="TextNameGroup" id="games">Games ></a>
+        <a href="games.html" class="TextNameGroup" id="games" data-translate="head_games">Games ></a>
         <section class="Elements">
             <div class="Carousel">
-                <button class="VidImg" data-url="https://yandex.ru/games/app/456897?draft=true&lang=ru" onclick="redirect(this)"><img src="Resources/AstroArena.jpg" alt="Изображение игры"></button>
-                <button class="VidImg" data-url="https://vladislav8275.itch.io/racinggame" onclick="redirect(this)"><img src="Resources/template_logo.jpg" alt="Изображение игры"></button>
-                <button class="VidImg" data-url="https://vladislav8275.itch.io/choose-of-two" onclick="redirect(this)"><img src="Resources/icon3.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://yandex.ru/games/app/456897?draft=true&lang=ru")'><img src="Resources/AstroArena.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://vladislav8275.itch.io/racinggame")'><img src="Resources/template_logo.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://vladislav8275.itch.io/fish-it")'><img src="Resources/icon1.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://vladislav8275.itch.io/choose-of-two")'><img src="Resources/icon3.jpg" alt="Изображение игры"></button>
             </div>
         </section>
         <hr>
-        <a href="#" class="TextNameGroup">Arts ></a>
+        <a href="arts.html" class="TextNameGroup" id="games" data-translate="head_arts">Arts ></a>
         <section class="Elements">
             <div class="Carousel">
-                <button class="VidImg" data-url="https://www.artstation.com/artwork/YG4rlX" onclick="redirect(this)"><img src="Resources/niom-fullrender4.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" data-url="https://www.artstation.com/artwork/ZlmPmX" onclick="redirect(this)"><img src="Resources/r32.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" data-url="https://www.artstation.com/artwork/XJ2Gxl" onclick="redirect(this)"><img src="Resources/niom-r23.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" data-url="https://www.artstation.com/artwork/P6GA04" onclick="redirect(this)"><img src="Resources/art2.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" data-url="https://www.artstation.com/artwork/nJvE16" onclick="redirect(this)"><img src="Resources/niom-testrend40.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" data-url="https://www.artstation.com/artwork/JrOW0A" onclick="redirect(this)"><img src="Resources/art3.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" data-url="https://www.artstation.com/artwork/BkaLvr" onclick="redirect(this)"><img src="Resources/art1.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/YG4rlX")'><img src="Resources/niom-fullrender4.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/ZlmPmX")'><img src="Resources/r32.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/XJ2Gxl")'><img src="Resources/niom-r23.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/P6GA04")'><img src="Resources/art2.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/nJvE16")'><img src="Resources/niom-testrend40.jpg" alt="Изображение арта"></button>
             </div>
         </section>
     </main>

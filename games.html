@@ -10,14 +10,14 @@
 <body onload="switchFirstLang()">
     <header>
         <div class="wrapperH">
-            <div class="box1">
+            <!-- <div class="box1">
                 <div class="mRectLogo2">NIOM</div>
-            </div>
+            </div> -->
             <nav class="in">
-                <a href="index.html" class="Textbut" data-lang data-lang-en="Home" data-lang-ru="Главная">Home</a>
-                <a href="games.html" class="Textbut" data-lang data-lang-en="Games" data-lang-ru="Игры">Games</a>
-                <a href="#" class="Textbut" data-lang data-lang-en="Arts" data-lang-ru="Арт">Arts</a>
-                <a href="#" class="Textbut" data-lang data-lang-en="About" data-lang-ru="Информация">About</a>
+                <a href="index.html" class="Textbut" data-translate="nav_home">Home</a>
+                <a href="games.html" class="Textbut" data-translate="nav_games">Games</a>
+                <a href="arts.html" class="Textbut" data-translate="nav_arts">Arts</a>
+                <a href="about.html" class="Textbut" data-translate="nav_about">About</a>
             </nav>
             <div class="wrapperButtons">
                 <button class="ButtonAction" onclick="switchLanguage('en')">EN</button>
@@ -28,11 +28,12 @@
     
     <main class="wrapper">
         <section class="Elements">
-            <a href="games.html" class="TextNameGroup" id="games">Games ></a>
+            <a href="games.html" class="TextNameGroup" id="games" data-translate="head_games">Games ></a>
             <div class="Carousel">
-                <button class="VidImg" data-url="https://yandex.ru/games/app/456897?draft=true&lang=ru" onclick="redirect(this)"><img src="Resources/AstroArena.jpg" alt="Изображение игры"></button>
-                <button class="VidImg" data-url="https://vladislav8275.itch.io/racinggame" onclick="redirect(this)"><img src="Resources/template_logo.jpg" alt="Изображение игры"></button>
-                <button class="VidImg" data-url="https://vladislav8275.itch.io/choose-of-two" onclick="redirect(this)"><img src="Resources/icon3.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://yandex.ru/games/app/456897?draft=true&lang=ru")'><img src="Resources/AstroArena.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://vladislav8275.itch.io/racinggame")'><img src="Resources/template_logo.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://vladislav8275.itch.io/fish-it")'><img src="Resources/icon1.jpg" alt="Изображение игры"></button>
+                <button class="VidImg" onclick='openWindow("https://vladislav8275.itch.io/choose-of-two")'><img src="Resources/icon3.jpg" alt="Изображение игры"></button>
             </div>
         </section>
     </main>

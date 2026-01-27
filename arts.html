@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test Site</title>
+    <link rel="stylesheet" type="text/css" href="CSS/SiteSettings.css">
+</head>
+
+<body onload="switchFirstLang()">
+    <header>
+        <div class="wrapperH">
+            <!-- <div class="box1">
+                <div class="mRectLogo2">NIOM</div>
+            </div> -->
+            <nav class="in">
+                <a href="index.html" class="Textbut" data-translate="nav_home">Home</a>
+                <a href="games.html" class="Textbut" data-translate="nav_games">Games</a>
+                <a href="arts.html" class="Textbut" data-translate="nav_arts">Arts</a>
+                <a href="about.html" class="Textbut" data-translate="nav_about">About</a>
+            </nav>
+            <div class="wrapperButtons">
+                <button class="ButtonAction" onclick="switchLanguage('en')">EN</button>
+                <button class="ButtonAction" onclick="switchLanguage('ru')">RU</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="wrapper">
+        <section class="Elements">
+            <a href="arts.html" class="TextNameGroup" id="games" data-translate="head_arts">Arts ></a>
+            <div class="Carousel">
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/YG4rlX")'><img src="Resources/niom-fullrender4.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/ZlmPmX")'><img src="Resources/r32.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/XJ2Gxl")'><img src="Resources/niom-r23.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/P6GA04")'><img src="Resources/art2.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/nJvE16")'><img src="Resources/niom-testrend40.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/JrOW0A")'><img src="Resources/art3.jpg" alt="Изображение арта"></button>
+                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/BkaLvr")'><img src="Resources/art1.jpg" alt="Изображение арта"></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="Scripts/Script.js"></script>
+</body>
+
+</html>

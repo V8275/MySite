@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>About | Test Site</title>
+    <link rel="stylesheet" type="text/css" href="CSS/SiteSettings.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapperH">
+            <nav class="in">
+                <a href="index.html" class="Textbut" data-translate="nav_home">Home</a>
+                <a href="games.html" class="Textbut" data-translate="nav_games">Games</a>
+                <a href="arts.html" class="Textbut" data-translate="nav_arts">Arts</a>
+                <a href="about.html" class="Textbut" data-translate="nav_about">About</a>
+            </nav>
+            <div class="wrapperButtons">
+                <button class="ButtonAction" onclick="switchLanguage('en')">EN</button>
+                <button class="ButtonAction" onclick="switchLanguage('ru')">RU</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="wrapper">
+        <section class="wrapperHero">
+            <h1 class="headerText" data-translate="about_title">About Me</h1>
+            
+            <div class="HeaderPhoto">
+                <img src="Resources/Background.jpg" 
+                     alt="Profile Photo" 
+                     data-translate-alt="profile_alt"
+                     data-translate-alt-en="Vladislav - Game Developer"
+                     data-translate-alt-ru="Владислав - Разработчик игр">
+            </div>
+            
+            <div class="wrapperdesc">
+                <p class="Text-desc" data-translate="about_greeting">
+                    Hello! I'm Vladislav, a passionate game developer and 3D artist with [X] years of experience in the industry...
+                </p>
+                
+                <p class="Text-desc" data-translate="about_journey">
+                    My journey in game development started when I was [age]. Since then, I've worked on various projects...
+                </p>
+                
+                <p class="Text-desc" data-translate="about_details">
+                    When I'm not coding or designing, you can find me exploring new technologies...
+                </p>
+            </div>
+            
+            <hr>
+            
+            <h2 class="TextNameGroup" data-translate="skills_title">Skills & Expertise</h2>
+            
+            <div class="wrapperdesc">                
+                <div class="wrapperButtons">
+                    <button class="ButtonAction" onclick='openWindow("https://vladislav8275.itch.io")'>
+                        <p>Itch</p>
+                    </button>
+                    <button class="ButtonAction" onclick='openWindow("https://www.artstation.com/user-7338825")'>
+                        <p>ArtStation</p>
+                    </button>
+                    <button class="ButtonAction" onclick='openWindow("https://github.com/V8275")'>
+                        <p>GitHub</p>
+                    </button>
+                </div>
+            </div>
+            <script>
+                
+            </script>
+        </section>
+    </main>
+
+    <script src="Scripts/Script.js"></script>
+</body>
+</html>
