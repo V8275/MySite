@@ -13,26 +13,28 @@
     "more_info": "More information",
     "email": "Email",
     "main_title": "Each game is a new adventure!",
-    "main_description": "Hello! I'm Vladislav, a game developer, and this is my website. Here you can find my works - games, 3D art, and more. Here, each game is a new adventure!",
-    "head_games": "Games >",
-    "head_arts": "Arts >"
+    "main_description": "Hello! I'm Vladislav, a game developer, and this is my website. Here you can find my works — games, 3D art, and more. Here, each game is a new adventure!",
+    "head_games": "Games",
+    "head_arts": "Arts",
+    "view_all": "View all"
   },
   "ru": {
     "nav_home": "Главная",
     "nav_games": "Игры",
     "nav_arts": "Арт",
-    "nav_about": "Информация",
+    "nav_about": "Обо мне",
     "about_title": "Обо мне",
     "about_greeting": "Привет! Я Владислав, Unity-программист и 3D-художник с 5-летним профессиональным опытом в разработке игр. Обладаю знаниями в Unity, C# и Unreal Engine для создания игровых систем и механик.",
-    "about_journey": "Мой профессиональный опыт включает работу в качестве Unity-программиста, занимался поведением ИИ, механиками персонажей, оптимизацией legacy-кода и разработкой шейдеров. Также имею опыт полного цикла разработки гиперказуальных проектов и симуляторов.",
+    "about_journey": "Мой профессиональный опыт включает работу в качестве Unity-программиста: поведение ИИ, механики персонажей, оптимизация legacy-кода и разработка шейдеров. Также имею опыт полного цикла разработки гиперказуальных проектов и симуляторов.",
     "about_details": "Обладаю знаниями в техническом арте, включая Shader Graph, VFX Graph, 3D-моделирование в Blender и оптимизацию игр. Работал с Yandex SDK, IronSource, Admob, имею опыт работы с фреймворками Zenject и DoTween.",
     "skills_title": "Навыки и опыт",
     "projects": "Проекты",
-    "more_info": "Информация",
+    "more_info": "Подробнее",
     "email": "Почта",
-    "main_title": "Каждая игра это новое приключение!",
-    "main_description": "Привет! Я Владислав, разработчик игр, и это мой сайт. На нем вы можете найти мои работы - игры, 3D арты и другое. Здесь каждая игра – это новое приключение!",
-    "head_games": "Игры >",
-    "head_arts": "Арт >"
+    "main_title": "Каждая игра — это новое приключение!",
+    "main_description": "Привет! Я Владислав, разработчик игр, и это мой сайт. На нём вы можете найти мои работы — игры, 3D арты и другое. Здесь каждая игра — это новое приключение!",
+    "head_games": "Игры",
+    "head_arts": "Арт",
+    "view_all": "Смотреть все"
   }
 }

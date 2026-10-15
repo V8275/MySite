@@ -1,47 +1,51 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
-    <title>Test Site</title>
-    <link rel="stylesheet" type="text/css" href="CSS/SiteSettings.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arts | V8275</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body onload="switchFirstLang()">
-    <header>
-        <div class="wrapperH">
-            <!-- <div class="box1">
-                <div class="mRectLogo2">NIOM</div>
-            </div> -->
-            <nav class="in">
-                <a href="index.html" class="Textbut" data-translate="nav_home">Home</a>
-                <a href="games.html" class="Textbut" data-translate="nav_games">Games</a>
-                <a href="arts.html" class="Textbut" data-translate="nav_arts">Arts</a>
-                <a href="about.html" class="Textbut" data-translate="nav_about">About</a>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">V8275</a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link" data-translate="nav_home">Home</a>
+                <a href="games.html" class="nav__link" data-translate="nav_games">Games</a>
+                <a href="arts.html" class="nav__link" data-translate="nav_arts">Arts</a>
+                <a href="about.html" class="nav__link" data-translate="nav_about">About</a>
             </nav>
-            <div class="wrapperButtons">
-                <button class="ButtonAction" onclick="switchLanguage('en')">EN</button>
-                <button class="ButtonAction" onclick="switchLanguage('ru')">RU</button>
+            <div class="lang-switch">
+                <button class="lang-switch__btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+                <button class="lang-switch__btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
             </div>
         </div>
     </header>
-    
-    <main class="wrapper">
-        <section class="Elements">
-            <a href="arts.html" class="TextNameGroup" id="games" data-translate="head_arts">Arts ></a>
-            <div class="Carousel">
-                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/YG4rlX")'><img src="Resources/niom-fullrender4.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/ZlmPmX")'><img src="Resources/r32.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/XJ2Gxl")'><img src="Resources/niom-r23.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/P6GA04")'><img src="Resources/art2.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/nJvE16")'><img src="Resources/niom-testrend40.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/JrOW0A")'><img src="Resources/art3.jpg" alt="Изображение арта"></button>
-                <button class="VidImg" onclick='openWindow("https://www.artstation.com/artwork/BkaLvr")'><img src="Resources/art1.jpg" alt="Изображение арта"></button>
-            </div>
-        </section>
+
+    <main class="page">
+        <div class="container">
+            <section class="section">
+                <div class="section__head">
+                    <h1 class="section__title" data-translate="head_arts">Arts</h1>
+                </div>
+                <div class="grid">
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/OvWY4v")'><img src="Resources/lancia.jpg" alt="Art 1"></button>
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/YG4rlX")'><img src="Resources/niom-fullrender4.jpg" alt="Art 2"></button>
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/ZlmPmX")'><img src="Resources/r32.jpg" alt="Art 3"></button>
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/XJ2Gxl")'><img src="Resources/niom-r23.jpg" alt="Art 4"></button>
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/P6GA04")'><img src="Resources/art2.jpg" alt="Art 5"></button>
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/nJvE16")'><img src="Resources/niom-testrend40.jpg" alt="Art 6"></button>
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/JrOW0A")'><img src="Resources/art3.jpg" alt="Art 7"></button>
+                    <button class="card" onclick='openWindow("https://www.artstation.com/artwork/BkaLvr")'><img src="Resources/art1.jpg" alt="Art 8"></button>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <script src="Scripts/Script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
